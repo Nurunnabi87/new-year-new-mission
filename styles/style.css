@@ -72,6 +72,10 @@ body {
   margin: 50px 140px;
 }
 
+.celebration-content {
+  display: flex;
+  justify-content: space-around;
+}
 .welcome-title {
   width: 742px;
   font-family: "Merriweather", serif;
@@ -102,9 +106,11 @@ body {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0px 1059px 142px 158px;
+  padding: 0px 580px 142px 158px;
 }
-
+.celebration-img {
+  padding: 80px 100px 0 0;
+}
 #celebration-schedule {
   background: linear-gradient(
     180deg,
@@ -219,7 +225,7 @@ body {
 #holiday-sales {
   background: #fff;
   width: 1320px;
-  height: 600px;
+  height: 1050px;
   margin: 50px 140px;
   text-align: center;
 }
@@ -257,27 +263,37 @@ body {
 }
 
 .holiday-images {
-  display: flex;
-  flex-wrap: wrap;
+  width: 1320px;
+  height: 700px;
+  position: relative;
 }
 
-/* .holiday-images img-1 {
-  flex: 1 1 auto;
-  width: 98.77px;
-  height: 145.319px;
-} */
-/* .holiday-images img-2 {
-  flex: 1 1 auto;
-  width: 206.841px;
-  height: 206.841px;
-} */
-/* .holiday-images img-3 {
-  flex: 1 1 auto;
-  width: 429px;
-  height: 433px;
-} */
-#holiday-sales img-4 {
-  flex: 1 100%;
+.holiday-images .img-1 {
+  position: absolute;
+  bottom: 290px;
+  right: 260px;
+  z-index: 1;
+}
+.holiday-images .img-2 {
+  position: absolute;
+  bottom: 229px;
+  right: 0;
+}
+.holiday-images .img-3 {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  bottom: 50px;
+  left: 158px;
+  z-index: 1;
+}
+.holiday-images .img-4 {
+  width: 1320px;
+  height: 229px;
+  border-radius: 16px 0px 16px 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /* bset gifts section styles  */
